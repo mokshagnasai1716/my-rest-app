@@ -4,21 +4,18 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Pull code from GitHub
-                git 'url'
+                git 'https://github.com/mokshagnasai1716/my-rest-app.git'
             }
         }
 
         stage('Build') {
             steps {
-                // Clean and compile project
                 sh 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
-                // Run unit tests
                 sh 'mvn test'
             }
         }
