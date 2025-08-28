@@ -1,9 +1,11 @@
 pipeline {
     agent any
 
-     tools {
-        maven 'M3' 
+    tools {
+        jdk 'jdk17'
+        maven 'M3'
     }
+
     stages {
         stage('Build') {
             steps {
