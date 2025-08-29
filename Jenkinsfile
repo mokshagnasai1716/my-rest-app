@@ -20,10 +20,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ Build and tests passed successfully!'
+            echo 'Build and tests passed successfully!'
         }
         failure {
-            echo '❌ Build failed or tests did not pass.'
+            echo 'Build failed or tests did not pass.'
         }
     }
 }
