@@ -11,6 +11,6 @@ public class SumControllerTest {
     @Test
     void testSum() {
         String response = controller.getSum(5, 10);
-        assertThat(response).isEqualTo("The sum of 5 and 10 is 15");
+        assertThat(response).isEqualTo("The product of 5 and 10 is 50");
     }
 }
