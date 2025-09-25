@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        maven 'M3'
+        maven 'Maven-3.9.9'
     }
 
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                sh 'mvn clean install -DskipTests'
             }
         }
         stage('Test') {
